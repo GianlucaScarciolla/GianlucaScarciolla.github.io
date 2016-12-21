@@ -1,0 +1,197 @@
+html, body, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  color: #fff;
+  overflow: hidden;
+}
+
+* {
+   font-family: 'Quicksand light', sans-serif;
+}
+
+.page {
+  position: absolute;
+}
+
+#welcome {
+  left: 0;
+}
+
+#projects, #about, #contact, #more {
+  left: 200%;
+}
+
+#welcome { background: black; }
+#projects { background: #e74c3c; }
+#about { background: #FF5722; }
+#contact { background: #9b59b6; }
+#more { background: #2196F3; }
+
+#s2:target #projects,
+#s3:target #about,
+#s4:target #contact,
+#s5:target #more {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transition-delay: .4s !important;
+}
+
+#s2:target #welcome,
+#s3:target #welcome,
+#s4:target #welcome,
+#s5:target #welcome{
+  background: black;
+}
+
+#s2:target #welcome .icon,
+#s3:target #welcome .icon,
+#s4:target #welcome .icon,
+#s5:target #welcome .icon {
+  -webkit-filter: blur(3px);
+}
+
+.icon {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+}
+
+ul .icon:hover {
+  opacity: 0.5;
+}
+
+.page .icon .title {
+  line-height: 2;
+}
+
+#s2:target ul .icon,
+#s3:target ul .icon,
+#s4:target ul .icon,
+#s5:target ul .icon{
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -o-transform: scale(.6);
+  transition-delay: .25s;
+}
+
+#s2:target #sec2,
+#s3:target #sec3,
+#s4:target #sec4,
+#s5:target #sec5 {
+  transform: scale(1.2) !important;
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+}
+
+ul {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+ }
+
+#menu .icon {
+  margin: 30px 0;
+  transition: all .5s ease-out !important;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.copyrights  {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.title, .hint {
+  display: block;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.hint {
+  font-size: 16px;
+}
+
+#contact .hint {
+  display: inherit !important;
+}
+
+.hint a {
+  color: yellow;
+  transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+}
+
+.hint a:hover {
+  color: #FFF;
+}
+
+.line-trough {
+  text-decoration: line-through;
+}
+
+.page .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  width: 80%;
+  height: 170px;
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  line-height: 1.3;
+  transform: translateX(360%);
+  -webkit-transform: translateX(360%);
+  -moz-transform: translateX(360%);
+  -o-transform: translateX(360%);
+  transition: all .15s cubic-bezier(.48,0,0,.97);
+  -webkit-transition: all .15s cubic-bezier(.48,0,0,.97);
+  -moz-transition: all .15s cubic-bezier(.48,0,0,.97);
+  -o-transition: all .15s cubic-bezier(.48,0,0,.97);
+}
+
+.page#welcome .icon {
+  height: 220px;
+}
+
+.page#welcome .icon {
+  transform: translateX(10%) !important;
+}
+
+#s2:target .page#projects .icon,
+#s3:target .page#about .icon,
+#s4:target .page#contact .icon,
+#s5:target .page#more .icon {
+  transform: translateX(0) !important;
+  -webkit-transform: translateX(0) !important;
+  -moz-transform: translateX(0) !important;
+  -o-transform: translateX(0) !important;
+  transition-delay: 0s;
+}
