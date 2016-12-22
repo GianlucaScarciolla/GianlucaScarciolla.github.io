@@ -1,2 +1,2 @@
 # GianlucaScarciolla.github.io
-I will not merge any pull request :)
+I will not merge any pull requests :)
