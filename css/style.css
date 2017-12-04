@@ -26,6 +26,10 @@ hr {
   overflow-y: scroll;
 }
 
+.aboutlist td {
+  font-size: 18px;
+  text-align: left;
+}
 
 .cbt {
   -webkit-border-radius: 0;
@@ -154,7 +158,7 @@ a {
 }
 
 .title {
-  font-size: 55px;
+  font-size: 65px;
 }
 
 .hint {
@@ -194,12 +198,58 @@ a {
 }
 
 .iconlink a:hover {
-  color: #ffffff;
+  color: #dfdfdf;
 }
 
 .iconlink a:active {
   color: #ffffff;
 }
+
+.aboutlist {
+  color: #ffffff;
+}
+
+.aboutlist a:link {
+  color: #ffffff;
+}
+
+.aboutlist a:visited {
+  color: #ffffff;
+}
+
+.aboutlist a:hover {
+  color: #dfdfdf;
+}
+
+.aboutlist a:active {
+  color: #ffffff;
+}
+
+.project-list {
+  color: #ffffff;
+}
+
+.project-list a:link {
+  color: #ffffff;
+}
+
+.project-list a:visited {
+  color: #ffffff;
+}
+
+.project-list a:hover {
+  color: #dfdfdf;
+}
+
+.project-list a:active {
+  color: #ffffff;
+}
+
+.project-list {
+  font-size: 18px;
+  text-align: left;
+}
+
 
 .page .icon {
   position: absolute;
