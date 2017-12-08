@@ -10,6 +10,26 @@ body {
 
 /* MENU */
 
+.tooltip-home+.tooltip>.tooltip-inner {
+  background-color: #000000;
+}
+
+.tooltip-projects+.tooltip>.tooltip-inner {
+  background-color: #e74c3c;
+}
+
+.tooltip-about+.tooltip>.tooltip-inner {
+  background-color: #9b59b6;
+}
+
+.tooltip-contact+.tooltip>.tooltip-inner {
+  background-color: #ffbb00;
+}
+
+.tooltip-more+.tooltip>.tooltip-inner {
+  background-color: #3498db;
+}
+
 @media only screen and (max-width: 480px) {
   .menuside {
     width: 100%;
@@ -123,7 +143,7 @@ body {
     padding-left: 0px !important;
   }
   section {
-    padding-top: 100px !important;
+    padding-top: 80px !important;
   }
 }
 
@@ -141,8 +161,8 @@ section {
 }
 
 .centerfix {
-display: table-cell;
-vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .welcome {
@@ -199,29 +219,32 @@ a:hover {
 }
 
 .terminal:after {
-	content:"_";
-	opacity: 0;
-	animation: cursor 1s infinite;
-}
-@keyframes cursor {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  content: "_";
+  opacity: 0;
+  animation: cursor 1s infinite;
 }
 
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 /* OTHER STUFF */
+
 .list-group-item {
   background-color: transparent;
 }
@@ -245,5 +268,5 @@ a:hover {
 }
 
 hr {
-border-top: 1px dashed #fff;
+  border-top: 1px dashed #fff;
 }
